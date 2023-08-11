@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	 <style>
+	 #aussy {
+        width: 400px;
+        height: 300px;
+        background: tan;
+        display: inline-block;
+}
+
+#shepherd {
+        width: 400px;
+        height: 300px;
+        background: gray;
+        display: inline-block;
+}
+
+#akita-inu{
+        width: 400px;
+        height: 300px;
+        background: pink;
+        display: inline-block;
+}
+
+#showCoords, #state {
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        left: 840px;
+        top: 5px;
+        border: 1px solid;
+        padding-left: 5px;
+}
+
+#state {
+      top: 55px;
+}
+
+img {
+     width: 100px;
+}
+	 </style>
+</head>
+<body>
+	<div id="aussy" style="border: none"></div>
+   <div id="akita-inu" style="border: none"></div>
+   <div id="shepherd" style="border: none"></div>
+    <img
+      id="dog1"
+      style="position: absolute; left: 10px; top: 620px"
+      src="./images/dog3.jpg"
+      draggable="true"
+      data-breed="shepherd"
+    />
+    <img
+      id="dog2"
+      style="position: absolute; left: 120px; top: 620px"
+      src="./images/dog1.jpg"
+      draggable="true"
+      data-breed="akita-inu"
+    />
+    <img
+      id="dog3"
+      style="position: absolute; left: 230px; top: 620px"
+      src="./images/dog2.jpg"
+      draggable="true"
+      data-breed="aussy"
+    />
+    <img
+      id="dog4"
+      style="position: absolute; left: 340px; top: 620px"
+      src="./images/dog3.jpg"
+      draggable="true"
+      data-breed="shepherd"
+    />
+	 <img
+      id="dog5"
+      style="position: absolute; left: 450px; top: 620px"
+      src="./images/dog2.jpg"
+      draggable="true"
+      data-breed="aussy"
+    />
+    <div id="showCoords"></div>
+    <div id="state"></div>
+    <input
+      type="button"
+      name=""
+      onclick="check()"
+      value="Check breed"
+      style="position: absolute; left: 840px; top: 150px"
+    />
+	<script src="./script.js"></script>
+	
+</body>
+</html>
